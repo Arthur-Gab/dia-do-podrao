@@ -1,6 +1,7 @@
 import Modal from "../../UI/Modal";
 import { LuArrowRight, LuX } from "react-icons/lu";
 import OrderedItem from "../../layout/OrderedItem";
+import { useCartContext } from "../../context/CartContext";
 
 const burguerItem = {
 	name: "Clássico Cheeseburger",
@@ -10,22 +11,20 @@ const burguerItem = {
 };
 
 function Cart(props) {
-	const cartItems = [
-		{
-			id: "b1",
-			name: "Clássico Cheeseburger",
-			description:
-				"Pão de hambúrguer, carne de boi, queijo cheddar, alface, tomate, cebola, molho especial.",
-			price: 12.99,
-		},
-	].map((item) => (
+	const cartState = useCartContext();
+	// debugger;
+	const cartItems = cartState.map((item) => (
 		<OrderedItem
 			key={item.id}
 			name={item.name}
-			description={item.description}
 			price={item.price}
+			qtt={item.qtt}
 		/>
 	));
+
+	const cartTotal = cartState.reduce((acc, cur) => {
+		return (acc = acc + cur.price * cur.qtt);
+	}, 0);
 
 	return (
 		<Modal onClick={props.closeCart}>
@@ -61,7 +60,7 @@ function Cart(props) {
 						aria-label="Valor total do pedido"
 					>
 						TOTAL:
-						<span className="text-black ml-2">R$ 56.89</span>
+						<span className="text-black ml-2">R$ {cartTotal}</span>
 					</span>
 					<LuArrowRight
 						size={32}

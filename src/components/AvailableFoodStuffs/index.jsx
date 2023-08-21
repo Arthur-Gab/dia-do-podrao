@@ -2,36 +2,42 @@ import FoodItem from "../../layout/FoodItem";
 
 const DUMMY_BURGUERS = [
 	{
+		id: "burguer_1",
 		name: "Clássico Cheeseburger",
 		description:
 			"Pão de hambúrguer, carne de boi, queijo cheddar, alface, tomate, cebola, molho especial.",
 		price: 12.99,
 	},
 	{
+		id: "burguer_2",
 		name: "Hambúrguer Vegano",
 		description:
 			"Pão vegano, hambúrguer de grão-de-bico, queijo vegano, alface, tomate, cebola, molho vegano.",
 		price: 10.99,
 	},
 	{
+		id: "burguer_3",
 		name: "Hambúrguer Duplo Bacon",
 		description:
 			"Pão de hambúrguer, 2 carnes de boi, queijo cheddar, bacon, alface, cebola, molho especial.",
 		price: 15.99,
 	},
 	{
+		id: "burguer_4",
 		name: "Hambúrguer Frango Grelhado",
 		description:
 			"Pão de hambúrguer, peito de frango grelhado, queijo suíço, alface, tomate, cebola roxa, molho de mostarda e mel.",
 		price: 13.49,
 	},
 	{
+		id: "burguer_5",
 		name: "Hambúrguer de Picanha",
 		description:
 			"Pão de hambúrguer, carne de picanha, queijo provolone, rúcula, cebola caramelizada, molho de barbecue.",
 		price: 16.99,
 	},
 	{
+		id: "burguer_6",
 		name: "Hambúrguer Vegetariano de Abóbora",
 		description:
 			"Pão integral, hambúrguer de abóbora, queijo feta, espinafre, cebola roxa, molho de iogurte.",
@@ -41,7 +47,10 @@ const DUMMY_BURGUERS = [
 
 function AvailableFoodStuffs() {
 	const foodStuffsList = DUMMY_BURGUERS.map((item) => (
-		<FoodItem>{item.name}</FoodItem>
+		<FoodItem
+			key={item.id}
+			item={item}
+		/>
 	));
 
 	return (

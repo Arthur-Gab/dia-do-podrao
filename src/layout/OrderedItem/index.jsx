@@ -25,7 +25,7 @@ const OrderedItem = (props) => {
 						className="px-1"
 						aria-label="Quantidade do item"
 					>
-						1
+						{props.qtt}
 					</span>
 					<button aria-label="Aumentar a quantidade do item">
 						<FaPlus className="text-yellow" />
