@@ -8,14 +8,14 @@ import { CartProvider } from "./context/CartContext";
 function App() {
 	const [isCartShow, setIsCartShow] = useState(false);
 
-	function handlerCartShow() {
+	function handlerCartOpenAndClose() {
 		setIsCartShow(!isCartShow);
 	}
 
 	return (
 		<CartProvider>
-			{isCartShow && <Cart closeCart={handlerCartShow} />}
-			<Header showCart={handlerCartShow} />
+			{isCartShow && <Cart closeCart={handlerCartOpenAndClose} />}
+			<Header openCart={handlerCartOpenAndClose} />
 			<main className="container mx-auto px-4 mt-32">
 				<FoodStuffs />
 			</main>

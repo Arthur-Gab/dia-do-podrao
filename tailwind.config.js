@@ -11,7 +11,7 @@ export default {
 				secondary: "#F2BC17",
 			},
 			red: {
-				DEFAULT: "#FF0707",
+				DEFAULT: "#ff1b17",
 				secondary: "#E00505",
 			},
 			black: {

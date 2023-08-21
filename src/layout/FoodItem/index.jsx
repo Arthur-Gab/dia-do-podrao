@@ -7,7 +7,7 @@ function FoodItem(props) {
 
 	function addItemToCart() {
 		dispatch({
-			type: "ADD",
+			type: "ADD_TO_CART",
 			id: props.item.id,
 			name: props.item.name,
 			price: props.item.price,
@@ -30,7 +30,7 @@ function FoodItem(props) {
 				/>
 			</div>
 			<button
-				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold border-red-secondary bg-white text-red-secondary"
+				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold border-red-secondary bg-white text-red-secondary hover:scale-110 delay-100 ease-in-out duration-300 transition"
 				aria-label="Adicionar item ao carrinho de compras"
 				onClick={addItemToCart}
 			>

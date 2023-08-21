@@ -16,9 +16,7 @@ function Cart(props) {
 	const cartItems = cartState.map((item) => (
 		<OrderedItem
 			key={item.id}
-			name={item.name}
-			price={item.price}
-			qtt={item.qtt}
+			item={item}
 		/>
 	));
 
@@ -46,7 +44,14 @@ function Cart(props) {
 			</div>
 
 			{/* Lista de Itens que o cliente deseja comprar */}
-			<ul className="my-8 flex flex-col gap-6 px-10">{cartItems}</ul>
+			<ul className="my-8 flex flex-col gap-6 px-10">
+				{cartItems.length === 0 && (
+					<p className="text-white-d9 text-lg mx-auto">
+						Seu carrinho está vazio...
+					</p>
+				)}
+				{cartItems}
+			</ul>
 
 			{/* Total da compra */}
 			<div className="rounded-b bg-yellow py-4 text-2xl font-bold text-red">
@@ -60,7 +65,7 @@ function Cart(props) {
 						aria-label="Valor total do pedido"
 					>
 						TOTAL:
-						<span className="text-black ml-2">R$ {cartTotal}</span>
+						<span className="text-black ml-2">R$ {cartTotal.toFixed(2)}</span>
 					</span>
 					<LuArrowRight
 						size={32}

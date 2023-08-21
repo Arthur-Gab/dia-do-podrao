@@ -10,7 +10,7 @@ function Header(props) {
 						<LuDrumstick size={48} />
 						<h1 className="text-2xl w-20 font-bold">Dia do Podrão</h1>
 					</div>
-					<HeaderCart showCart={props.showCart} />
+					<HeaderCart openCart={props.openCart} />
 				</div>
 			</header>
 		</>

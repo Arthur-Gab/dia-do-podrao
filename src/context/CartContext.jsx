@@ -46,8 +46,8 @@ export function useCartDispatchContext() {
 // Adicionar e Remover Itens do Carrinho
 function cartReducer(curState, action) {
 	switch (action.type) {
-		// Adicionar
-		case "ADD": {
+		// Adicionar item ao carrinho
+		case "ADD_TO_CART": {
 			const item = {
 				id: action.id,
 				name: action.name,
@@ -59,17 +59,39 @@ function cartReducer(curState, action) {
 				(existingItem) => existingItem.id === item.id
 			);
 
-			// Se o item já existir no state aumentar a qtt em 1
+			// Se o item já existir no state não adicionar
 			if (existingIndex !== -1) {
-				const newState = [...curState];
-				newState[existingIndex].qtt += 1;
-				console.log(curState);
-				return newState;
+				return curState;
 			} else {
 				const newState = [...curState, { ...item }];
-				console.log(curState);
 				return newState;
 			}
+		}
+		// Remover item do carrinho
+		case "REMOVE": {
+			const newState = curState.filter((item) => item.id !== action.item.id);
+			return newState;
+		}
+		// Aumentar ou diminuir a quantidade do item no carrinho
+		case "INCREASE_OR_DECREASE": {
+			const newState = curState.map((item) => {
+				if (item.id === action.item.id) {
+					let qtt = item.qtt;
+
+					if (action.operator === "increase") {
+						qtt += 1;
+					} else if (action.operator === "decrease") {
+						if (qtt - 1 > 0) {
+							qtt -= 1;
+						}
+					}
+
+					return { ...item, qtt };
+				}
+				return item;
+			});
+
+			return newState;
 		}
 		default:
 			return curState;
