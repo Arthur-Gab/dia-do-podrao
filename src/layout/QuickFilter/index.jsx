@@ -1,11 +1,8 @@
 import { LuX } from "react-icons/lu";
 
 function QuickFilter(props) {
-	function handlerBtnState() {
-		props.onClick({
-			type: "TOGGLE_BTN_STATE",
-			label: props.label,
-		});
+	function handlerAvailableFoodStuffs() {
+		props.onClick(props.label);
 	}
 
 	return (
@@ -16,7 +13,7 @@ function QuickFilter(props) {
 			}`}
 			tabIndex={0}
 			aria-checked={props.btnState}
-			onClick={handlerBtnState}
+			onClick={handlerAvailableFoodStuffs}
 		>
 			{props.btnState && <LuX size={24} />}
 			<span id={props.label}>{props.label}</span>

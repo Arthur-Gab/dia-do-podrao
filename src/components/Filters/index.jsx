@@ -5,23 +5,23 @@ function Filters(props) {
 		<div className="flex gap-2 overflow-x-auto pb-4 h-fit min-[519px]:justify-center sm:gap-4">
 			<QuickFilter
 				label={"hamburguers"}
-				onClick={props.onChangeBtnState}
-				btnState={props.btnState.hamburguers}
+				btnState={props.availableFoodStuffs.includes("hamburguers")}
+				onClick={props.onChangeAvailableFoodStuffs}
 			/>
 			<QuickFilter
 				label={"bebidas"}
-				onClick={props.onChangeBtnState}
-				btnState={props.btnState.bebidas}
+				btnState={props.availableFoodStuffs.includes("bebidas")}
+				onClick={props.onChangeAvailableFoodStuffs}
 			/>
 			<QuickFilter
 				label={"combos"}
-				onClick={props.onChangeBtnState}
-				btnState={props.btnState.combos}
+				btnState={props.availableFoodStuffs.includes("combos")}
+				onClick={props.onChangeAvailableFoodStuffs}
 			/>
 			<QuickFilter
-				label={"alcoolico"}
-				onClick={props.onChangeBtnState}
-				btnState={props.btnState.alcoolico}
+				label={"alcoólico"}
+				btnState={props.availableFoodStuffs.includes("alcoolico")}
+				onClick={props.onChangeAvailableFoodStuffs}
 			/>
 		</div>
 	);
