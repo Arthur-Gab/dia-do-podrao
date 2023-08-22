@@ -1,14 +1,7 @@
-import Modal from "../../UI/Modal";
-import { LuArrowRight, LuX } from "react-icons/lu";
-import OrderedItem from "../../layout/OrderedItem";
 import { useCartContext } from "../../context/CartContext";
-
-const burguerItem = {
-	name: "Clássico Cheeseburger",
-	description:
-		"Pão de hambúrguer, carne de boi, queijo cheddar, alface, tomate, cebola, molho especial.",
-	price: 12.99,
-};
+import { LuArrowRight, LuX, LuShoppingBag } from "react-icons/lu";
+import Modal from "../../UI/Modal";
+import OrderedItem from "../../layout/OrderedItem";
 
 function Cart(props) {
 	const cartState = useCartContext();
@@ -44,11 +37,13 @@ function Cart(props) {
 			</div>
 
 			{/* Lista de Itens que o cliente deseja comprar */}
-			<ul className="my-8 flex flex-col gap-6 px-10">
+			<ul className="my-8 flex flex-col gap-6 max-sm:px-4 sm:px-10">
 				{cartItems.length === 0 && (
-					<p className="text-white-d9 text-lg mx-auto">
-						Seu carrinho está vazio...
-					</p>
+					<div className="text-white-d9 text-lg mx-auto flex flex-col gap-3 items-center animate-slide-dow">
+						<p className="font-bold">Sua sacola está vazia...</p>
+						<p>Adicione itens</p>
+						<LuShoppingBag size={32} />
+					</div>
 				)}
 				{cartItems}
 			</ul>

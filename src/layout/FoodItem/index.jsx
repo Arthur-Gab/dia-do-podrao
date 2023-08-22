@@ -15,7 +15,7 @@ function FoodItem(props) {
 	}
 
 	return (
-		<li className="mb-8 list-none md:max-w-md max-lg:mx-auto">
+		<li className="mb-8 list-none md:max-w-md w-full max-lg:mx-auto flex flex-col justify-between">
 			<div className="mb-4 flex gap-4">
 				<div className="flex-auto">
 					<h3 className="mb-4 inline-block border-b-2 font-bold border-b-white text-white">
@@ -30,7 +30,7 @@ function FoodItem(props) {
 				/>
 			</div>
 			<button
-				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold border-red-secondary bg-white text-red-secondary hover:scale-110 delay-100 ease-in-out duration-300 transition"
+				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold border-red-secondary bg-white text-red-secondary btn-animation"
 				aria-label="Adicionar item ao carrinho de compras"
 				onClick={addItemToCart}
 			>
@@ -38,7 +38,7 @@ function FoodItem(props) {
 					size={24}
 					aria-hidden={true}
 				/>
-				<span aria-label="Preço">R$ {props.item.price}</span>
+				<span aria-label="Preço">R$ {props.item.price.toFixed(2)}</span>
 			</button>
 		</li>
 	);

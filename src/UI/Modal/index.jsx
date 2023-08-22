@@ -16,7 +16,7 @@ function ModalOverlay(props) {
 		<div
 			role="dialog"
 			aria-modal={true}
-			className="fixed top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 z-50 w-11/12 bg-black-24 max-w-2xl rounded animate-slide-dow"
+			className="fixed top-2/4 -translate-y-2/4 left-2/4 -translate-x-2/4 z-50 w-11/12 bg-black-24 max-w-2xl rounded"
 		>
 			{props.children}
 		</div>

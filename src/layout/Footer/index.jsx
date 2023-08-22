@@ -46,8 +46,8 @@ function Footer() {
 						</li>
 					</ul>
 				</header>
-				<article>
-					<h2 className="mb-4 inline-block border-b-2 font-bold border-b-red">
+				<article className="font-bold">
+					<h2 className="mb-4 inline-block border-b-2 border-b-red">
 						HORÁRIO DE FUNCIONAMENTO:
 					</h2>
 					<ul className="space-y-2 pl-4">
@@ -55,8 +55,8 @@ function Footer() {
 						<li className="custom-listItem">Sab: 18h00 ás 00h00</li>
 					</ul>
 				</article>
-				<article>
-					<h2 className="mb-4 inline-block border-b-2font-bold border-b-red">
+				<article className="font-bold">
+					<h2 className="mb-4 inline-block border-b-2 border-b-red">
 						LOCALIZAÇÃO:
 					</h2>
 					<ul className="space-y-2 pl-4">

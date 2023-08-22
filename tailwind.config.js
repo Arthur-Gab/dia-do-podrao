@@ -30,17 +30,17 @@ export default {
 			backdrop: "rgba(0,0,0,.75)",
 		},
 		animation: {
-			"slide-dow": "slide-down .3s ease-out forwards",
+			"slide-dow": "slide-down .7s ease-out forwards",
 		},
 		keyframes: {
 			"slide-down": {
 				"0%": {
 					opacity: "0",
-					translateY: "-3rem",
+					transform: "translateY(3rem)",
 				},
 				"100%": {
 					opacity: "1",
-					translateY: "0",
+					transform: "translateY(0rem)",
 				},
 			},
 		},
