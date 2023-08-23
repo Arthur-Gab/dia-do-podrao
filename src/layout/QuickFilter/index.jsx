@@ -8,8 +8,10 @@ function QuickFilter(props) {
 	return (
 		<button
 			aria-labelledby={props.label}
-			className={`text-black w-fit px-4 py-2 rounded-full uppercase font-bold flex items-center gap-2 transition ${
-				props.btnState ? "bg-white" : "bg-yellow-secondary"
+			className={`dark:text-black w-fit px-4 py-2 rounded-full uppercase font-bold flex items-center gap-2 transition ${
+				props.btnState
+					? "dark:bg-white bg-black text-yellow-secondary"
+					: "bg-yellow-secondary"
 			}`}
 			tabIndex={0}
 			aria-checked={props.btnState}

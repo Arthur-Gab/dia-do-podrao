@@ -15,13 +15,15 @@ function FoodItem(props) {
 	}
 
 	return (
-		<li className="mb-8 list-none md:max-w-md w-full max-lg:mx-auto flex flex-col justify-between">
+		<li className="mb-8 list-none md:max-w-md w-full max-lg:mx-auto flex flex-col justify-between dark:text-white text-black">
 			<div className="mb-4 flex gap-4">
 				<div className="flex-auto">
-					<h3 className="mb-4 inline-block border-b-2 font-bold border-b-white text-white">
+					<h3 className="mb-4 inline-block border-b-2 font-bold dark:border-b-white border-b-black ">
 						{props.item.name}
 					</h3>
-					<p className="text-sm text-white-f2">{props.item.description}</p>
+					<p className="text-sm dark:text-white-f2 text-black-1e">
+						{props.item.description}
+					</p>
 				</div>
 				<img
 					alt="Representação do Item"
@@ -30,7 +32,7 @@ function FoodItem(props) {
 				/>
 			</div>
 			<button
-				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold border-red-secondary bg-white text-red-secondary btn-animation"
+				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold dark:border-red-secondary dark:bg-white dark:text-red-secondary bg-red btn-animation"
 				aria-label="Adicionar item ao carrinho de compras"
 				onClick={addItemToCart}
 			>

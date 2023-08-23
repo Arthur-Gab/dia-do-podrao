@@ -9,9 +9,9 @@ function Footer() {
 	};
 
 	return (
-		<footer className="bg-yellow">
-			<div className="container mx-auto flex flex-col gap-6 p-4 text-black">
-				<header className="flex items-center justify-between gap-2 text-black">
+		<footer className="dark:bg-yellow bg-black-24">
+			<div className="container mx-auto flex flex-col gap-6 p-4 dark:text-black text-white">
+				<header className="flex items-center justify-between gap-2 dark:text-black text-yellow">
 					<div className="flex gap-2 items-center">
 						<LuDrumstick size={48} />
 						<h1 className="text-2xl w-20 font-bold">Dia do Podrão</h1>
@@ -46,8 +46,8 @@ function Footer() {
 						</li>
 					</ul>
 				</header>
-				<article className="font-bold">
-					<h2 className="mb-4 inline-block border-b-2 border-b-red">
+				<article>
+					<h2 className="mb-4 inline-block border-b-2 dark:border-b-red border-b-yellow">
 						HORÁRIO DE FUNCIONAMENTO:
 					</h2>
 					<ul className="space-y-2 pl-4">
@@ -55,8 +55,8 @@ function Footer() {
 						<li className="custom-listItem">Sab: 18h00 ás 00h00</li>
 					</ul>
 				</article>
-				<article className="font-bold">
-					<h2 className="mb-4 inline-block border-b-2 border-b-red">
+				<article>
+					<h2 className="mb-4 inline-block border-b-2 dark:border-b-red border-b-yellow">
 						LOCALIZAÇÃO:
 					</h2>
 					<ul className="space-y-2 pl-4">

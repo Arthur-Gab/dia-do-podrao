@@ -31,7 +31,7 @@ function Filters(props) {
 						type="text"
 						id="searchFoods"
 						placeholder="Pesquisar ..."
-						className="w-full text-lg pl-8 bg-transparent placeholder:text-white text-white font-bold"
+						className="w-full text-lg pl-8 bg-transparent dark:placeholder:text-white dark:text-white font-bold text-black placeholder:text-black"
 						onChange={getInputValue}
 						value={props.inputValue}
 					/>

@@ -11,7 +11,7 @@ function HeaderCart(props) {
 	return (
 		<button
 			onClick={props.openCart}
-			className="bg-white flex gap-2 px-4 py-2 rounded items-center border-red-secondary text-red-secondary border-4 btn-animation"
+			className="dark:bg-white bg-red flex gap-2 px-4 py-2 rounded items-center dark:border-red-secondary dark:text-red-secondary border-4 btn-animation"
 		>
 			<LuShoppingCart size={24} />
 			<span className="font-bold">R$ {cartTotal.toFixed(2)}</span>

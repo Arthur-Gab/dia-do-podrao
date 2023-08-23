@@ -39,7 +39,7 @@ function Cart(props) {
 			{/* Lista de Itens que o cliente deseja comprar */}
 			<ul className="my-8 flex flex-col gap-6 max-sm:px-4 sm:px-10">
 				{cartItems.length === 0 && (
-					<div className="text-white-d9 text-lg mx-auto flex flex-col gap-3 items-center animate-slide-dow">
+					<div className="dark:text-white-d9 text-lg mx-auto flex flex-col gap-3 items-center animate-slide-dow">
 						<p className="font-bold">Sua sacola está vazia...</p>
 						<p>Adicione itens</p>
 						<LuShoppingBag size={32} />

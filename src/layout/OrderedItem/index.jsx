@@ -28,17 +28,17 @@ const OrderedItem = (props) => {
 	}
 
 	return (
-		<li className="list-none border-b-2 border-red pb-4 text-lg text-white">
+		<li className="list-none border-b-2 border-red pb-4 text-lg dark:text-white text-black">
 			<div className="mb-2 flex justify-between text-left">
 				<p>{props.item.name}</p>
-				<strong className="text-stroke text-right text-yellow">
+				<strong className="text-stroke text-right text-yellow-secondary dark:text-yellow">
 					{props.item.price.toFixed(2)}
 				</strong>
 			</div>
 
 			<div className="flex justify-between px-4">
 				<button
-					className="text-white-a6 hover:text-red ease-in duration-300 transition-colors"
+					className="dark:text-white-a6 text-black-63 hover:text-red ease-in duration-300 transition-colors"
 					aria-label="Remover item do carrinho"
 					onClick={handlerRemoveItemFromCart}
 				>
@@ -49,7 +49,7 @@ const OrderedItem = (props) => {
 						onClick={handlerDecreaseQuantity}
 						aria-label="Diminuir a quantidade do item"
 					>
-						<FaMinus className="text-yellow" />
+						<FaMinus className="text-yellow-secondary dark:text-yellow" />
 					</button>
 					<span
 						className="px-1"
@@ -61,7 +61,7 @@ const OrderedItem = (props) => {
 						onClick={handlerIncreaseQuantity}
 						aria-label="Aumentar a quantidade do item"
 					>
-						<FaPlus className="text-yellow" />
+						<FaPlus className="text-yellow-secondary dark:text-yellow" />
 					</button>
 				</div>
 			</div>
