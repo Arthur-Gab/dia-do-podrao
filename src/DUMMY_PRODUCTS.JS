@@ -6,6 +6,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Pão de hambúrguer, carne de boi, queijo cheddar, alface, tomate, cebola, molho especial.",
 			price: 12.99,
+			img: "burguer",
 		},
 		{
 			id: "burguer_2",
@@ -13,6 +14,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Pão vegano, hambúrguer de grão-de-bico, queijo vegano, alface, tomate, cebola, molho vegano.",
 			price: 10.99,
+			img: "burguer",
 		},
 		{
 			id: "burguer_3",
@@ -20,6 +22,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Pão de hambúrguer, 2 carnes de boi, queijo cheddar, bacon, alface, cebola, molho especial.",
 			price: 15.99,
+			img: "burguer",
 		},
 		{
 			id: "burguer_4",
@@ -27,6 +30,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Pão de hambúrguer, peito de frango grelhado, queijo suíço, alface, tomate, cebola roxa, molho de mostarda e mel.",
 			price: 13.49,
+			img: "burguer",
 		},
 		{
 			id: "burguer_5",
@@ -34,6 +38,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Pão de hambúrguer, carne de picanha, queijo provolone, rúcula, cebola caramelizada, molho de barbecue.",
 			price: 16.99,
+			img: "burguer",
 		},
 		{
 			id: "burguer_6",
@@ -41,6 +46,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Pão integral, hambúrguer de abóbora, queijo feta, espinafre, cebola roxa, molho de iogurte.",
 			price: 11.99,
+			img: "burguer",
 		},
 	],
 	bebidas: [
@@ -50,6 +56,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Famosa Coca Cola gelada, perfeita para acompanhar seu hambúrguer favorito.",
 			price: 5.0,
+			img: "CocaCola",
 		},
 		{
 			id: "bebidas_2",
@@ -57,6 +64,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Limonada feita na hora, com limões frescos e um toque de hortelã.",
 			price: 6.5,
+			img: "limonadaNatural",
 		},
 		{
 			id: "bebidas_3",
@@ -64,6 +72,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Milkshake cremoso de chocolate, coberto com chantilly e raspas de chocolate.",
 			price: 7.0,
+			img: "MilkshakeDeChocolate",
 		},
 		{
 			id: "bebidas_4",
@@ -71,6 +80,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Bebida gaseificada sabor cola, perfeita para acompanhar seu hambúrguer.",
 			price: 4.0,
+			img: "pepsi",
 		},
 		{
 			id: "bebidas_5",
@@ -78,6 +88,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Suco fresco e natural de laranja, cheio de vitaminas e refrescância.",
 			price: 5.5,
+			img: "sucodelaranja",
 		},
 		{
 			id: "bebidas_6",
@@ -85,6 +96,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Água mineral com gás, uma opção simples e revigorante para acompanhar sua refeição.",
 			price: 3.0,
+			img: "agua",
 		},
 	],
 	combos: [
@@ -96,6 +108,7 @@ export const DUMMY_PRODUCTS = {
 			hamburguer: "Clássico Cheeseburger",
 			bebida: "Coca Cola",
 			price: (12.99 + 5.0) * 0.9,
+			img: "combos",
 		},
 		{
 			id: "combo_2",
@@ -105,6 +118,7 @@ export const DUMMY_PRODUCTS = {
 			hamburguer: "Hambúrguer Vegano",
 			bebida: "Limonada Natural",
 			price: (10.99 + 6.5) * 0.9,
+			img: "combos",
 		},
 		{
 			id: "combo_3",
@@ -114,6 +128,7 @@ export const DUMMY_PRODUCTS = {
 			hamburguer: "Hambúrguer Duplo Bacon",
 			bebida: "Pepsi",
 			price: (15.99 + 4.0) * 0.9,
+			img: "combos",
 		},
 		{
 			id: "combo_4",
@@ -123,6 +138,7 @@ export const DUMMY_PRODUCTS = {
 			hamburguer: "Hambúrguer Frango Grelhado",
 			bebida: "Suco de Laranja Natural",
 			price: (13.49 + 5.5) * 0.9,
+			img: "combos",
 		},
 		{
 			id: "combo_5",
@@ -132,6 +148,7 @@ export const DUMMY_PRODUCTS = {
 			hamburguer: "Hambúrguer de Picanha",
 			bebida: "Milkshake de Chocolate",
 			price: (16.99 + 7.0) * 0.9,
+			img: "combos",
 		},
 		{
 			id: "combo_6",
@@ -141,6 +158,7 @@ export const DUMMY_PRODUCTS = {
 			hamburguer: "Hambúrguer Vegetariano de Abóbora",
 			bebida: "Água Mineral com Gás",
 			price: (11.99 + 3.0) * 0.9,
+			img: "combos",
 		},
 	],
 	alcoolico: [
@@ -150,12 +168,14 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Clássico coquetel à base de tequila, licor de laranja e suco de limão.",
 			price: 8.5,
+			img: "Margarita",
 		},
 		{
 			id: "bebida_alcoolica_2",
 			name: "Martini Dry",
 			description: "Elegante coquetel de gim e vermute seco, com uma azeitona.",
 			price: 9.0,
+			img: "MartiniDry",
 		},
 		{
 			id: "bebida_alcoolica_3",
@@ -163,6 +183,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Refrescante coquetel cubano à base de rum branco, hortelã e limão.",
 			price: 7.5,
+			img: "Mojito",
 		},
 		{
 			id: "bebida_alcoolica_4",
@@ -170,6 +191,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Coquetel sofisticado com vodka, licor de laranja, suco de cranberry e limão.",
 			price: 8.75,
+			img: "Cosmopolitan",
 		},
 		{
 			id: "bebida_alcoolica_5",
@@ -177,6 +199,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Tradicional coquetel brasileiro com cachaça, limão e açúcar.",
 			price: 6.25,
+			img: "Caipirinha",
 		},
 		{
 			id: "bebida_alcoolica_6",
@@ -184,6 +207,7 @@ export const DUMMY_PRODUCTS = {
 			description:
 				"Coquetel tropical à base de rum, suco de abacaxi e leite de coco.",
 			price: 7.0,
+			img: "piñacolada",
 		},
 	],
 };

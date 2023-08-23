@@ -11,9 +11,9 @@ function Filters(props) {
 	}
 
 	return (
-		<>
+		<section aria-label="Filtros">
 			<form
-				className="flex max-w-5xl w-full mx-auto items-center"
+				className="flex max-w-5xl w-full mx-auto items-center mb-6"
 				onReset={onResetInputValue}
 			>
 				<fieldset className="relative flex items-center pb-1 border-b-red border-b-2 w-full max-w-5xl mx-auto">
@@ -49,7 +49,7 @@ function Filters(props) {
 				</button>
 			</form>
 			<div
-				className="flex gap-2 overflow-x-auto pb-4 h-fit min-[519px]:justify-center sm:gap-4"
+				className="flex gap-2 max-[528px]:overflow-x-scroll pb-4 h-fit min-[519px]:justify-center sm:gap-4 scrollbar-filter"
 				tabIndex={-1}
 				aria-label={"Pesquisa rápida"}
 			>
@@ -74,7 +74,7 @@ function Filters(props) {
 					onClick={props.onFilterSection}
 				/>
 			</div>
-		</>
+		</section>
 	);
 }
 

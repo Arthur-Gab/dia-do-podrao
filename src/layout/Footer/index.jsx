@@ -65,8 +65,18 @@ function Footer() {
 						</li>
 					</ul>
 				</article>
-				<address className="text-center text-xs brightness-90">
-					© 2023 Arthur Gabriel. Todos os direitos reservados.
+				<address
+					className="text-center text-xs brightness-90"
+					title="Veja meu linkedin"
+				>
+					<a
+						href="https://www.linkedin.com/in/art2354/"
+						target="_blank"
+						className="relative group"
+					>
+						© 2023 Arthur Gabriel. Todos os direitos reservados.
+						<span className="absolute -bottom-1 w-0 -translate-x-2/4 left-2/4 dark:bg-red bg-yellow h-[2px] z-0 group-hover:animate-line-grow"></span>
+					</a>
 				</address>
 			</div>
 		</footer>

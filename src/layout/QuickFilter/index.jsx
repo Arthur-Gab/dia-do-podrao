@@ -7,6 +7,7 @@ function QuickFilter(props) {
 
 	return (
 		<button
+			type="button"
 			aria-labelledby={props.label}
 			className={`dark:text-black w-fit px-4 py-2 rounded-full uppercase font-bold flex items-center gap-2 transition ${
 				props.btnState

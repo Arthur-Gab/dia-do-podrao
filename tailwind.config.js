@@ -31,6 +31,7 @@ export default {
 		},
 		animation: {
 			"slide-dow": "slide-down .7s ease-out forwards",
+			"line-grow": "line-grow 1s ease-in forwards",
 		},
 		keyframes: {
 			"slide-down": {
@@ -41,6 +42,16 @@ export default {
 				"100%": {
 					opacity: "1",
 					transform: "translateY(0rem)",
+				},
+			},
+		},
+		keyframes: {
+			"line-grow": {
+				"0%": {
+					width: "0px",
+				},
+				"100%": {
+					width: "100%",
 				},
 			},
 		},

@@ -1,4 +1,5 @@
-import burguer from "../../assets/img/burguer.jpg";
+// import burguer from "../../assets/img/burguer.jpg";
+import GetImage from "../../components/GetImage";
 import { FaShoppingBasket } from "react-icons/fa";
 import { useCartDispatchContext } from "../../context/CartContext";
 
@@ -25,10 +26,16 @@ function FoodItem(props) {
 						{props.item.description}
 					</p>
 				</div>
-				<img
+				{/* <img
 					alt="Representação do Item"
 					src={burguer}
 					className="w-32 self-start justify-self-end rounded sm:w-44"
+				/> */}
+				<GetImage
+					className={
+						"self-start justify-self-end rounded sm:w-44 max-h-32 max-sm:max-w-[116px]"
+					}
+					img={props.item.img}
 				/>
 			</div>
 			<button
