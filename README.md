@@ -57,8 +57,8 @@ Espero que a navegação tenha realmente ficado simples e intuitiva de se fazer 
 
 ## Árvore de Componente
 
-![Árvore de Componentes](./Components%20Tree.png)
+![Árvore de Componentes](./Low%20Component%20Tree.jpeg)
 
-## Temas (Ligth e Dark)
+## Low Wireframe
 
-![Temas.txt](./Theme.txt)
+![Temas.txt](./Low%20Wireframe.jpeg)
