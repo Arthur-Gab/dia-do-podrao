@@ -55,6 +55,9 @@ Eu tenho como objetivo, atualmente, construir somente o Front-End desse site, ma
 
 Espero que a navegação tenha realmente ficado simples e intuitiva de se fazer e que não seja somente eu que entendo como usar isso. Mas, vou deixar em anexo alguns documentos que talvez possam ser úteis para vocês que querem saber mais do projeto.
 
+Caso queira dar uma olhada eu postei vídeos sobre esse projeto no meu canal no youtube. Segue o link abaixo:
+Youtube: https://www.youtube.com/channel/UCPNr64ksGe2DbjdHO2mCfzw
+
 ## Árvore de Componente
 
 ![Árvore de Componentes](./Low%20Component%20Tree.jpeg)
