@@ -1,6 +1,8 @@
 # Dia do Podrão 🤤
 
 Esse site é uma iniciativa para aprofundar meus conhecimentos em ReactJs + Tailwind CSS.
+O site seria uma um meio online do "Dia do Podrão" poder vender seus produtos, que são primariamente, junk foods, fast foods.
+No momento o projeto consta somente com o Frontend, porque ainda estou aprendendo a fazer REST APIs, mas posteriormente vou completar esse projeto.
 
 ## Do Design 💭
 
