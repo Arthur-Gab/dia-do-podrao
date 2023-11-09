@@ -1,6 +1,6 @@
-import { AiFillFacebook } from "react-icons/ai";
-import { LuDrumstick } from "react-icons/lu";
-import { SiIfood, SiInstagram } from "react-icons/si";
+import { AiFillFacebook } from 'react-icons/ai';
+import { LuDrumstick, LuArrowUpRight } from 'react-icons/lu';
+import { SiIfood, SiInstagram } from 'react-icons/si';
 
 function Footer() {
 	// Só pra impedir o reload caso seja clicado no link
@@ -72,10 +72,10 @@ function Footer() {
 					<a
 						href="https://www.linkedin.com/in/art2354/"
 						target="_blank"
-						className="relative group"
+						className="flex gap-2 justify-center items-center text-base"
 					>
 						© 2023 Arthur Gabriel. Todos os direitos reservados.
-						<span className="absolute -bottom-1 w-0 -translate-x-2/4 left-2/4 dark:bg-red bg-yellow h-[2px] z-0 group-hover:animate-line-grow"></span>
+						<LuArrowUpRight size={24} />
 					</a>
 				</address>
 			</div>
