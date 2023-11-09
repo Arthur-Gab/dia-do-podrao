@@ -31,10 +31,6 @@
 }
 
 @layer components {
-	.btn-animation {
-		@apply hover:scale-110 delay-100 ease-in-out duration-300 transition;
-	}
-
 	.scrollbar-filter {
 		scrollbar-color: var(--scrollbar-color) transparent;
 	}

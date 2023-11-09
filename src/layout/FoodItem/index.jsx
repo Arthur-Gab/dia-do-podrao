@@ -1,14 +1,14 @@
 // import burguer from "../../assets/img/burguer.jpg";
-import GetImage from "../../components/GetImage";
-import { FaShoppingBasket } from "react-icons/fa";
-import { useCartDispatchContext } from "../../context/CartContext";
+import GetImage from '../../components/GetImage';
+import { FaShoppingBasket } from 'react-icons/fa';
+import { useCartDispatchContext } from '../../context/CartContext';
 
 function FoodItem(props) {
 	const dispatch = useCartDispatchContext();
 
 	function addItemToCart() {
 		dispatch({
-			type: "ADD_TO_CART",
+			type: 'ADD_TO_CART',
 			id: props.item.id,
 			name: props.item.name,
 			price: props.item.price,
@@ -33,13 +33,13 @@ function FoodItem(props) {
 				/> */}
 				<GetImage
 					className={
-						"self-start justify-self-end rounded sm:w-44 max-h-32 max-sm:max-w-[116px]"
+						'self-start justify-self-end rounded sm:w-44 max-h-32 max-sm:max-w-[116px]'
 					}
 					img={props.item.img}
 				/>
 			</div>
 			<button
-				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold dark:border-red-secondary dark:bg-white dark:text-red-secondary bg-red btn-animation"
+				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold dark:border-red-secondary dark:bg-white dark:text-red-secondary bg-red hover:animate-horizontal-grow"
 				aria-label="Adicionar item ao carrinho de compras"
 				onClick={addItemToCart}
 			>
