@@ -39,7 +39,7 @@ function FoodItem(props) {
 				/>
 			</div>
 			<button
-				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold dark:border-red-secondary dark:bg-white dark:text-red-secondary bg-red hover:animate-horizontal-grow"
+				className="border-blacks flex w-full justify-center gap-4 rounded border-4 px-4 py-2 font-bold dark:border-red-secondary dark:bg-white dark:text-red-secondary bg-red active:animate-horizontal-grow"
 				aria-label="Adicionar item ao carrinho de compras"
 				onClick={addItemToCart}
 			>
